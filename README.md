@@ -1,10 +1,10 @@
-## Stackoverflow-clone
-Clone of famous website "Stack overflow" build using MERN Stack.
+# StackOverflow-clone
+Clone of the famous website "Stack overflow" built using MERN Stack.
 
-# Steps to use the application
+## Steps to use the application
 
-# npm install
+### npm install
 use the above command to install dependencies
 
-# npm start
-use the above command in both server andclient side to run
+### npm start
+use the above command on both the server and client sides to run the application
