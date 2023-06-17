@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useDispatch} from 'react-redux'
-import { updateProfile } from '../../api';
+import { updateProfile } from '../../actions/users';
 
 const EditProfileForm = ({currentUser, setSwitch}) => {
 
