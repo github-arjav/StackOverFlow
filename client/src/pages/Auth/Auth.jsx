@@ -5,6 +5,8 @@ import './Auth.css'
 import icon from '../../assests/icon.png'
 import AboutAuth from './AboutAuth'
 import {signup, login} from '../../actions/auth'
+import {toast, ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Auth = () => {
     
@@ -79,7 +81,7 @@ const Auth = () => {
                 }
             </form>
             <p>
-                {isSignup ? 'Already have an Account?' : "Don't ave an account"}
+                {isSignup ? 'Already have an Account?' : "Don't have an account"}
                 <button type='button' className='handle-switch-btn' onClick={handleSwitch}>{ isSignup ? "Log In" : 'Sign Up' }</button>
             </p>
         </div>

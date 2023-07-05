@@ -45,6 +45,17 @@
     background-color: rgb(226, 226, 226);
 }
 
+.community, .gpt{
+    font-size: medium;
+    font-weight: 600;
+    color: #ef8236;
+    border: solid 1px #f8f9f9;
+}
+
+.community:hover, .gpt:hover{
+    border: solid 1px #ef8236;
+}
+
 .nav-logo:hover{
     background: none;
 }

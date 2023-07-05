@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useSelector} from 'react-redux'
 import './HomeMainbar.css'
 import QuestionList from './QuestionList'
+import ChatbotIcon from '../ChatbotIcon/ChatbotIcon'
 
 const HomeMainbar = () => {
 
@@ -11,61 +12,7 @@ const HomeMainbar = () => {
   const navigate = useNavigate()
 
   const questionsList = useSelector(state => state.questionsReducer)
-  // console.log(questionsList)
 
-  // var questionsList = [{
-  //   _id: 1,
-  //   upVotes: 3,
-  //   downVotes: 2,
-  //   noOfAnswers: 2,
-  //   questionTitle: "What is a functon?",
-  //   questionBody: "It meant to be",
-  //   questionTags: ["java", "node js", "react js", "mongodb"],
-  //   userPosted: "akj",
-  //   userId: 1,
-  //   askedOn: "jan 1",
-  //   answer:[{
-  //     answerBody: "Answer",
-  //     userAnswered: 'kumar',
-  //     answeredOn: "jan 2",
-  //     userId: 2,
-  //   }]
-  // },{
-  //   _id: 2,
-  //   upVotes: 3,
-  //   downVotes: 2,
-  //   noOfAnswers: 0,
-  //   questionTitle: "What is a functon?",
-  //   questionBody: "It meant to be",
-  //   questionTags: ["javascript", "R", "python"],
-  //   userPosted: "akj",
-  //   userId: 1,
-  //   askedOn: "jan 1",
-  //   answer:[{
-  //     answerBody: "Answer",
-  //     userAnswered: 'kumar',
-  //     answeredOn: "jan 2",
-  //     userId: 2,
-  //   }]
-  // },{
-  //   _id: 3,
-  //   upVotes: 1,
-  //   downVotes: 0,
-  //   noOfAnswers: 0,
-  //   questionTitle: "What is a functon?",
-  //   questionBody: "It meant to be",
-  //   questionTags: ["java", "node js", "react js", "mongodb"],
-  //   userPosted: "akj",
-  //   userId: 1,
-  //   askedOn: "jan 1",
-  //   answer:[{
-  //     answerBody: "Answer",
-  //     userAnswered: 'kumar',
-  //     answeredOn: "jan 2",
-  //     userId: 2,
-  //   }]
-  // }]
-  
     const checkAuth = () => {
       if(user === null){
         alert("login or signup to ask a question") 
@@ -92,6 +39,7 @@ const HomeMainbar = () => {
             </>
           }
         </div>
+        <ChatbotIcon/>
     </div>
   )
 }

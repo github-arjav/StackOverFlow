@@ -1,0 +1,29 @@
+.user-widget-container{
+    width: 24rem;
+    margin: 100px 20px;
+    transform: translateZ(0);
+    padding: 20px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%),
+    0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.user-name, .user-occupation, .user-bio{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.friends{
+    padding: 0px 20px;
+    margin-top: -15px;
+}
+
+.user-bio{
+    margin-top: -10px;
+}
+
+.user-widget-container h4{
+    font-weight: 400;
+}
