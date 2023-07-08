@@ -47,6 +47,10 @@
     text-align: center;
 }
 
+.vote-ans{
+    display: flex;
+}
+
 .display-question-details{
     flex-grow: 1;
     padding: 0px 20px;
@@ -102,3 +106,15 @@
       padding: 10px;
     }
   }
+
+@media screen and (max-width: 620px) {
+    .display-question-container{
+        display: block;
+    }
+    .display-votes-ans{
+        display: flex;
+    }
+    .vote-ans{
+        display: flex;
+    }
+}

@@ -33,8 +33,8 @@ const mailer = (email, otpcode) => {
         port: process.env.PORT || 5000,
         secure: false,
         auth: {
-            user: 'programming.gpt@gmail.com',
-            pass: 'qjgeadnfdtzghetx'
+            user: process.env.USER,
+            pass: process.env.PASS
         }
     })
 

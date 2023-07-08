@@ -65,7 +65,7 @@ p span:first-child {
   position: sticky;
   bottom: 0px;
   width: 100%;
-  padding: 2% 5%;
+  padding: 5px 0px;
 }
 
 .doubt {
@@ -81,14 +81,15 @@ p span:first-child {
 
 .main-container{
   min-height: calc(100vh - 100px);
-  margin: 0% auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  padding: 20px;
 }
 
 .form-container{
   text-align: center;
+  flex-grow: 1;
   padding: 20px;
   box-shadow: 0 10px 25px rgb(239 130 54 / 25%),
     0 20px 48px rgb(239 130 54 / 25%),
@@ -148,4 +149,11 @@ p span:first-child {
 
 .otp-btn:hover{
   background-color: #0086d8;
+}
+
+@media screen and (max-width: 680px) {
+  .user_msg, .assistant{
+    max-width: 90%;
+    margin-left: 10px;
+  }
 }

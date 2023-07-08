@@ -12,7 +12,7 @@ import ProfileBio from './ProfileBio'
 
 import './UserProfile.css'
 
-const UserProfile = () => {
+const UserProfile = ({ slideIn, handleSlideIn }) => {
 
     const {id} = useParams()
     const users = useSelector((state) => state.usersReducer)
@@ -24,7 +24,7 @@ const UserProfile = () => {
 
   return (
     <div className='home-container-1'>
-        <LeftSideBar />
+        <LeftSideBar slideIn={slideIn} handleSlideIn={handleSlideIn} />
         <div className="home-container-2">
             <section>
                 <div className="user-details-container">

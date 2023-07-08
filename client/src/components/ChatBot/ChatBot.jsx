@@ -10,8 +10,8 @@ import "./ChatBot.css";
 
 
 const configuration = new Configuration({
-  organization: "org-0F0sruWUXkcZSJeoFYNI2wv5",
-  apiKey: "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",
+  organization: process.env.ORG,
+  apiKey: process.env.API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);
@@ -38,7 +38,7 @@ const ChatBot = () => {
     e.preventDefault()
     if(!isOtpSent) {
       try {
-        let url = 'http://localhost:5000/otp/email-send'
+        let url = 'https://stack-overflow-ce16.onrender.com/otp/email-send'
         let options = {
           method: 'POST',
           url:url,
@@ -52,7 +52,7 @@ const ChatBot = () => {
         toast.error('Invalid Email')
       }
     } else{
-      let url = 'http://localhost:5000/otp/verify-otp'
+      let url = 'https://stack-overflow-ce16.onrender.com/otp/verify-otp'
       let options = {
         method: 'POST',
         url:url,

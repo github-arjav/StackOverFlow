@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 const Questions = ({question}) => {
   return (
     <div className='display-question-container'>
+        <div className="vote-ans">
         <div className="display-votes-ans">
           <p>{question.upVote.length - question.downVote.length}</p>
           <p>votes</p>
@@ -13,6 +14,7 @@ const Questions = ({question}) => {
         <div className="display-votes-ans">
           <p>{question.noOfAnswers}</p>
           <p>answers</p>
+        </div>
         </div>
         <div className="display-question-details">
           <Link to={`/Question/${question._id}`} className='question-title-link'>{question.questionTitle}</Link>

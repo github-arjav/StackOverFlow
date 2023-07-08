@@ -1,6 +1,9 @@
+.main-container{
+    display: flex;
+    top: 0;
+}
+
 .user-widget-container{
-    width: 24rem;
-    margin: 100px 20px;
     transform: translateZ(0);
     padding: 20px;
     box-shadow: 0 10px 25px rgb(0 0 0 / 5%),

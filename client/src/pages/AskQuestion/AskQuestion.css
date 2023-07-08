@@ -1,12 +1,12 @@
 .ask-question{
     min-height: 100vh;
     background-color: #f1f2f3;
+    display: flex;
 }
 
 .ask-ques-container{
     padding: 20px;
-    margin: auto;
-    min-width: 1200px;
+    flex-grow: 1;
 }
 
 .ask-ques-container h1{
@@ -54,4 +54,11 @@
 
 .review-btn:hover{
     background-color: #0086d8;
+}
+
+@media screen and (max-width: 375px) {
+    .ask-ques-container h1{
+        font-size: 25px;
+        text-align: center;
+    }
 }
