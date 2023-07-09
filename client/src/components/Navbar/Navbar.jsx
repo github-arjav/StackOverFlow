@@ -36,9 +36,17 @@ const Navbar = () => {
   return (
     <nav className="main-nav">
       <div className="navbar">
-        <button className="slide-in-icon" >
-          <img src={bars} alt="menu" width="15" />
-        </button>
+      <div className="dropdown nav-item">
+          <button className="drop-btn"><img src={bars} alt="bars" width={15}/></button>
+          <div className="drop-content">
+              <Link to='/' className="content-i">Home</Link>
+              <Link to='/Questions' className="content-i">Questions</Link>
+              <Link to='/Tags' className="content-i">Tags</Link>
+              <Link to='/Users' className="content-i">Users</Link>
+              <Link to='/GPT' className="content-i exc">ProgrammingGPT</Link>
+              <Link to='/Community' className="content-i exc">Community</Link>
+          </div>
+        </div>
         <Link to="/" className="nav-item nav-logo">
           <img src={logo} alt="logo" />
         </Link>
