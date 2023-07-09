@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import Otp from "../models/otp.js";
 import Users from "../models/auth.js";
 import nodemailer from 'nodemailer'
+
 export const emailSend = async (req, res) => {
     const data = await Users.findOne({email: req.body.email})
     if(data){
@@ -10,7 +11,8 @@ export const emailSend = async (req, res) => {
             email: req.body.email,
             code: otpcode
         })
-        let otpRespose = await otpData.save()
+        let otpRespose = await otpData.save();
+        console.log(otpRespose);
         mailer(req.body.email, otpcode)
         res.status(200).json({message: "Success"})
     } else {
@@ -33,8 +35,8 @@ const mailer = (email, otpcode) => {
         port: process.env.PORT || 5000,
         secure: false,
         auth: {
-            user: process.env.USER,
-            pass: process.env.PASS
+            user: 'programming.gpt@gmail.com',
+            pass: 'yguxrrzkkuwkjzsh'
         }
     })
 

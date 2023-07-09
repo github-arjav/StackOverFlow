@@ -2,7 +2,7 @@ import React from 'react'
 import LeftSideBar from '../../components/LeftSidebar/LeftSidebar'
 import TagsList from './TagsList'
 import './Tags.css'
-const Tags = ({ slideIn, handleSlideIn }) => {
+const Tags = () => {
   const tagsList = [
     {
       id: 1,
@@ -57,7 +57,7 @@ const Tags = ({ slideIn, handleSlideIn }) => {
   ];
   return (
     <div className='home-container-1'>
-        <LeftSideBar slideIn={slideIn} handleSlideIn={handleSlideIn} />
+        <LeftSideBar />
         <div className="home-container-2">
             <h1 className='tags-h1'>Tags</h1>
             <p className='tags-p'>A tag is a keyword or label that categorizes your question with other , similar questions.</p>

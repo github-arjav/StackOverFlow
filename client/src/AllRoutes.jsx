@@ -12,17 +12,17 @@ import UserProfile from './pages/UserProfile/UserProfile'
 import Community from './pages/Community/Community'
 import ChatBot from './components/ChatBot/ChatBot'
 
-const AllRoutes = ({ slideIn, handleSlideIn }) => {
+const AllRoutes = () => {
   return (
     <Routes>
-        <Route path='/' element={<Home slideIn={slideIn} handleSlideIn={handleSlideIn}/>}/>
+        <Route path='/' element={<Home />}/>
         <Route path='/Auth' element={<Auth />}/>
-        <Route path='/Questions' element={<Questions slideIn={slideIn} handleSlideIn={handleSlideIn}/>}/>
+        <Route path='/Questions' element={<Questions/>}/>
         <Route path='/AskQuestion' element={<AskQuestion />}/>
-        <Route path='/Question/:id' element={<DisplayQuestion slideIn={slideIn} handleSlideIn={handleSlideIn}/>}/>
-        <Route path='/Tags' element={<Tags slideIn={slideIn} handleSlideIn={handleSlideIn}/>}/>
-        <Route path='/Users' element={<Users slideIn={slideIn} handleSlideIn={handleSlideIn}/>}/>
-        <Route path='/Users/:id' element={<UserProfile slideIn={slideIn} handleSlideIn={handleSlideIn}/>}/>
+        <Route path='/Question/:id' element={<DisplayQuestion />}/>
+        <Route path='/Tags' element={<Tags />}/>
+        <Route path='/Users' element={<Users />}/>
+        <Route path='/Users/:id' element={<UserProfile />}/>
         <Route path='/Community' element={<Community/>}/>
         <Route path='/GPT' element={<ChatBot/>}/>
     </Routes>
